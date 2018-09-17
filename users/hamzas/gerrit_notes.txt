@@ -1,0 +1,51 @@
+#fetch the configuration branch
+git fetch origin refs/meta/config:refs/remotes/origin/meta/config
+
+#checkout the configuration branch
+git checkout meta/config
+
+	add revierwers
+		vi project.config and add as many reviewer as you want: 
+			[filter "*"]
+			reviewer = skander.hamza@st.com
+			reviewer = aymen.abderrahmen@st.com
+		
+		using git config
+			git config -f reviewers.config --add filter.*.reviewer skander.hamza@st.com
+			git config -f reviewers.config --add filter.*.reviewer aymen.abderrahmen@st.com
+	#Commit the modifications
+		git commit -a -m "Add reviewers skander & Aymen "
+
+	#Push the modifications to the server
+		git push origin meta/config:meta/config
+		
+access right
+	managed through codex groups
+		generic groups : project_members ; project_admins
+
+
+Create Branch
+	Gerrit provides a userfriendly interface to create branch.
+	1.Find your module in the gerrit list 
+	2.Create your branch 
+
+		
+create dashboard
+	Create the branch refs/meta/dashboards/(name of the dashboard) on the web interface of gerrit.
+		refs/meta/dashboards/main
+		(Once created, the branch is hidden in the web interface after a few second).
+	git fetch origin meta/dashboards/main
+	git checkout --track origin/meta/dashboards/main
+	
+
+refs/meta/dashboards/
+    
+
+ssh -p 29418 gerrit.st.com gerrit query status:open owner:self
+ssh -p 29418 gerrit.st.com gerrit ls-members stm32cube/owner_cryp
+
+    
+gerrit
+	https://gerrit.st.com/
+	ssh://gerrit.st.com:29418/stm32supportandthirdparties/Git-Training/git-training.git
+

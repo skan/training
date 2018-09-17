@@ -1,0 +1,333 @@
+﻿THERY,Jerome
+CARTIER-MILLON,Philippe
+KARGER,Thierry
+PAILLE,Bruno
+QUARESIMA,Rémi
+DUBORGEL,Olivier
+CHASSANIOL,Didier
+EICHWALD,Christophe
+Nouha ZAHI
+PINATEL,Christophe
+LENDRE,Sandrine
+
+
+
+
+
+
+
+
+
+
+
+
+https://codex.cro.st.com/file/download.php/5157/83283/p11078_r39730/Git-2.10.0-64-bit.exe
+
+
+git config --global user.name “hamzas”
+git config --global user.email skander.hamza@st.com
+
+git config --global alias.lg "log --graph --oneline --all --decorate"
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"
+
+git clone //tuncwd0079.tun.st.com/Share/git/git-training-5/users/project1.git
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/git-training-s6.git
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/git-training-s6-backup.git
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow.git
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow_advanced.git
+
+
+revert lab
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/advanced/revert.git
+
+submodule lab
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/submodules/submodules_step1.git
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/submodules/submodules_step2.git
+
+	git submodule add ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/repo/module1.git modules/m1
+	git submodule add ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/repo/module2.git modules/m2
+	git submodule add ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/repo/module3.git component/m3
+	git submodule add ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/repo/module4.git component/m4
+	
+subtree
+	CheckPoint: git push origin :hamzas (on parent & child)
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/subtree/child.git
+
+	git subtree add --prefix=my-child/ ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/subtree/child.git hamzas
+	git subtree push --prefix=my-child/ ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/subtree/child.git hamzas
+	git subtree push --prefix=my-child/ --squash ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/subtree/child.git hamzas
+	
+	[alias]
+    # the acronym stands for "subtree add"
+    sba = "!f() { git subtree add --prefix $2 $1 master --squash; }; f"
+    # the acronym stands for "subtree update"
+    sbu = "!f() { git subtree pull --prefix $2 $1 master --squash; }; f"
+	
+	git sba <repository uri> <destination folder>
+		git sba https://bitbucket.org/vim-plugins-mirror/vim-surround.git .vim/bundle/tpope-vim-surround
+
+Repo 
+	link ->	http://best.st.com/docshare/MCDAppli/STM32/Documents/Configuration%20Management/Git/STM32CubeCMP/Tools/fullSetup.html#repo
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/git-repo.git
+	ssh://gitolite@codex.cro.st.com/stm32cube/internal/git-repo.git /c/git/git-repo
+
+	ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/repo-training/repo_manifest.git
+	
+
+		
+gerrit
+	https://gerrit.st.com/
+	ssh://gerrit.st.com:29418/stm32supportandthirdparties/Git-Training/git-training.git
+
+
+
+
+Backups
+
+bashrc
+ 
+alias tlog='TortoiseGitProc /command:log /limit:200&'
+alias e='explorer .&'
+alias h='history'
+np()
+{
+  notepad++.exe $* &
+}
+alias edit='np'
+alias ll='ls -al'
+
+
+links
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow.git
+
+1)	395473		
+2)	396880		
+3)	396881		
+4)	396882		
+5)	396883		
+6)	396884		
+7)	396886		
+8)	396887		
+9)	396888		
+10)	396889		
+11)	398638 		
+12) 395473		
+
+
+
+
+
+Romain PARDO <romain.pardo@st.com>: firmware microcontroller (svn)
+
+      MMS_MCD_TOOLS_THIRD_PARTIES_PROGRAMMING_DEBUGGING_SERVICES 
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================================================
+
+Sophia S3
+
+
+Cedric Hottier
+Frédéric VIROT
+Eric ALLIOT
+=====
+Yoann BOUVET 
+=====
+Jean-Marc AZNAR 
+Arnaud ROUSSELOT 
+Fouad BARGAOUI 
+---
+
+swift github video
+
+395473		Cedric
+396880		Frederic
+396881		Eric
+396882		Yoann
+396883		Jean Marc
+396884		Arnaud
+396886		Fouad 
+398638 		skander
+
+
+
+
+_______________________
+git aliases
+alias gcl='git clone'
+alias ga='git add'
+alias g='git'
+alias gca='git commit -v -a'
+alias gcm='git commit -v -m'
+alias gco='git checkout'
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sophia - S2
+
+Alain DI PIAZZA : svn,
+Jerome CALAFAT ST : github ; svn ; clearcase ; opensouce
+Rita MANTERO : git tous es jours ; sans collaboration
+Jean-Paul COUPIGNY  : lora: clearcase ; svn
+Muriel vudo: dory ble; svn ; clearcase 
+======
+Lionel CHASTILLON  : svn (loic legad ? ) ; passage
+======
+Frederic MACCOTTA : home kit : jamais git. svn clearcase
+Philippe HERAU 
+Martine DA SILVA : svn; clearcase; designsync (philo 
+Christophe ARNAL 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sophia - S1
+
+----
+Richard CHAMI <richard.chami@st.com>;  2017
+Pierre DEMAJ <pierre.demaj@st.com>; 
+Xavier LOWAGIE <xavier.lowagie@st.com>;  quality & method
+Eric MECHIN <eric.mechin@st.com>;  appli (dory)
+Laurent FOLLIOT <laurent.folliot@st.com>;  tritemet signal
+-----
+Christophe Pierre LAFON <christophe-pierre.lafon@st.com>; 
+-----
+Francois CHANCEL <francois.chancel@st.com>
+Ilario REMI <ilario.remi@st.com>; 
+Ludovic CHAMPSAUR <ludovic.champsaur@st.com>; 
+Patrice BOYRON <patrice.boyron@st.com>; 
+
+absent:
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow.git
+395473		Alain
+396880		Jerome
+396881		Rita
+396882		Jean-Paul
+396883		Muriel
+396884		Lionel
+396886		Frederic
+396887		Philippe
+396888		Martine
+396889		Christophe
+398638 	skander
+
+Cedric HOTTIER 
+
+
+FULCHERI,Patrick 
+
+
+
+
+
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow.git
+
+396881		Richard
+396882		Pierre
+396883		Xavier
+396884		Eric
+396886		Laurent
+396887		Christophe
+396888		Francois
+396889		Ilario
+396890		Ludovic
+396893		Patrice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ssh://gitolite@codex.cro.st.com/stm32supportandthirdparties/Git-Training/workflow.git
+
+395473		
+396880		
+396881		
+396882		
+396883		
+396884		
+396886		
+396887		
+396888		
+398638 		
+396887		
+396888		
+398638 		
+
+
+395473		omar
+396880		najwa
+396881		houssem
+396882		abdelhamid
+396883		imen 
+396884		marwa
+396886		hedi
+396887		mouhib
+396888		alaa
+396880		raouf
+396883		kaouther
+398638 		skander
+---------------
+Olivier GALLIEN 
+Olivier KAPS 
+Patrick FULCHERI 
+Patrick OELHAFEN 
+David BELLEGARDE 
+Simon VALCIN 
+Fabrice RIGAUD 
+Stephane SERRE 
+Jacky BURBAN 
+Thierry DE BEAUDEAN 
+Jean Marc SAINT PIERRE 
+Skander HAMZA 
+Lionel BERTORELLO 
+
+395473	Olivier GALLIEN 
+396880	Olivier KAPS 	
+396881	Patrick FULCHERI 
+396882	Patrick OELHAFEN 
+396883	David BELLEGARDE 
+396884	Simon VALCIN 
+396886	Fabrice RIGAUD 
+396887	Stephane SERRE 
+396888	Jacky BURBAN 
+398638 	Thierry DE BEAUDEAN 
+396886	Jean Marc SAINT PIERRE 
+396887	Lionel BERTORELLO 
+
+	
+	
+
